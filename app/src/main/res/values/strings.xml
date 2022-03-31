@@ -7,10 +7,10 @@
     <string name="jepang">Jepang</string>
     <string name="taiwan">Taiwan</string>
     <string name="cari">CARI</string>
-    <string name="country_invalid">Jangan pilih negara asal</string>
+    <string name="country_invalid">Pilih negara asal</string>
     <string name="member_korea">Nayeon, Jeongyeon, Jihyo, Dahyun, Chaeyoung</string>
     <string name="member_jepang">Momo, Sana, Mina</string>
     <string name="member_taiwan">Tzuyu</string>
-    <string name="jangan_sentuh_tombol_cari">Jangan sentuh tombol cari</string>
+    <string name="twice">Twice</string>
 
 </resources>

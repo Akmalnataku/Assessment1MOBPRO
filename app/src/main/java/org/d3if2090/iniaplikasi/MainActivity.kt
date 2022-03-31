@@ -2,6 +2,7 @@ package org.d3if2090.iniaplikasi
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.widget.Toast
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.RecyclerView
@@ -27,27 +28,29 @@ class MainActivity : AppCompatActivity() {
 
     private fun cariAsal() {
         val selectedId = binding.radioGroup.checkedRadioButtonId
-        if (selectedId == -1){
+        if (selectedId == -1) {
             Toast.makeText(this, R.string.country_invalid, Toast.LENGTH_LONG).show()
             return
         }
         val isKorea = selectedId == R.id.koreaRadioButton //default value nya
-//        val isJepang = selectedId == R.id.jepangRadioButton //default value nya
-//        val isTaiwan = selectedId == R.id.taiwanRadioButton //default value nya
-        val kategori = getKategori (isKorea)
+        val isJepang = selectedId == R.id.jepangRadioButton
+        val isTaiwan = selectedId == R.id.taiwanRadioButton
+        val kategori = getKategori(isKorea,isJepang,isTaiwan)
+//        Log.d("kacau", "$kategori ")
 
-        binding.tvHasil.text = getString(kategori.toInt())
+        binding.tvHasil.text = kategori
     }
 
-    private fun getKategori(isKorea: Boolean): String {
-        val stringRes = if (isKorea) {
-            R.string.member_korea
-        } else {
-            R.string.member_jepang
+    private fun getKategori(isKorea: Boolean, isJepang: Boolean, isTaiwan: Boolean): String {
+        var stringRes = ""
+
+        when{
+            isKorea -> stringRes =  resources.getString(R.string.member_korea)
+            isJepang -> stringRes =  resources.getString(R.string.member_jepang)
+            isTaiwan -> stringRes =  resources.getString(R.string.member_taiwan)
         }
-        return  getString(stringRes)
+        return stringRes
     }
-
 
 
     private fun getData(): List<Member> {
