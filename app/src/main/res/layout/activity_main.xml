@@ -85,7 +85,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/button"
                 app:layout_constraintEnd_toEndOf="parent"
-                tools:text="Nayeon" />
+                android:text="@string/jangan_sentuh_tombol_cari" />
 
 
             <androidx.recyclerview.widget.RecyclerView
