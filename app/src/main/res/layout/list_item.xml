@@ -10,11 +10,12 @@
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="150dp"
-        android:layout_height="150dp"
+        android:layout_height="220dp"
         android:layout_marginTop="16dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="8dp"
         android:contentDescription="@null"
         android:src="@drawable/nayeon"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -25,21 +26,22 @@
         android:layout_marginTop="32dp"
         android:textSize="18sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@id/imageView"
-        app:layout_constraintStart_toStartOf="@id/imageView"
-        app:layout_constraintTop_toBottomOf="@id/imageView"
-        tools:text="Nayeon" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@id/imageView"
+        app:layout_constraintBottom_toTopOf="@id/tvTinggi"
+        tools:text="NAYEON" />
 
     <TextView
         android:id="@+id/tvTinggi"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:textSize="18sp"
+        android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@id/tvTanggal"
         app:layout_constraintEnd_toEndOf="@id/tvNama"
-        app:layout_constraintStart_toStartOf="@id/tvNama"
-        app:layout_constraintTop_toBottomOf="@id/tvNama"
+        app:layout_constraintStart_toStartOf="@+id/tvNama"
+        app:layout_constraintTop_toBottomOf="@+id/tvNama"
         tools:text="163 Cm" />
 
     <TextView
@@ -47,13 +49,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:layout_marginBottom="16dp"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@id/tvTinggi"
-        app:layout_constraintStart_toStartOf="@id/tvTinggi"
-        app:layout_constraintTop_toBottomOf="@id/tvTinggi"
-        tools:text="29 September 1995" />
+        android:layout_marginEnd="8dp"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="@+id/tvTinggi"
+        app:layout_constraintStart_toStartOf="@+id/tvTinggi"
+        app:layout_constraintTop_toBottomOf="@+id/tvTinggi"
+        tools:text="22 September 1995" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

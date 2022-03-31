@@ -55,15 +55,15 @@ class MainActivity : AppCompatActivity() {
 
     private fun getData(): List<Member> {
         return listOf(
-            Member("Nayeon", "163 Cm", "22 September 1995", R.drawable.nayeon),
-            Member("Jeongyeon", "167 Cm", "01 November 1996", R.drawable.jeongyeon),
-            Member("Momo", "163 Cm", "09 November 1996", R.drawable.momo),
-            Member("Sana", "164 Cm", "29 Desember 1996", R.drawable.sana),
-            Member("Jihyo", "160 Cm", "01 Februari 1997", R.drawable.jihyo),
-            Member("Mina", "163 Cm", "24 Maret 1997", R.drawable.mina),
-            Member("Dahyun", "159 Cm", "28 Mei 1998", R.drawable.dahyun),
-            Member("Chaeyoung", "159 Cm", "24 April 1999", R.drawable.chaeyoung),
-            Member("Tzuyu", "172 Cm", "14 Juni 1999", R.drawable.tzuyu)
+            Member("NAYEON", "163 cm", "22 September 1995", R.drawable.nayeon),
+            Member("JEONGYEON", "167 cm", "01 November 1996", R.drawable.jeongyeon),
+            Member("MOMO", "163 cm", "09 November 1996", R.drawable.momo),
+            Member("SANA", "164 cm", "29 Desember 1996", R.drawable.sana),
+            Member("JIHYO", "160 cm", "01 Februari 1997", R.drawable.jihyo),
+            Member("MINA", "163 cm", "24 Maret 1997", R.drawable.mina),
+            Member("DAHYUN", "159 cm", "28 Mei 1998", R.drawable.dahyun),
+            Member("CHAEYOUNG", "159 cm", "24 April 1999", R.drawable.chaeyoung),
+            Member("TZUYU", "172 cm", "14 Juni 1999", R.drawable.tzuyu)
         )
     }
 }
