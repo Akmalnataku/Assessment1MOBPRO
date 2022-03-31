@@ -31,9 +31,9 @@ class MainActivity : AppCompatActivity() {
             Toast.makeText(this, R.string.country_invalid, Toast.LENGTH_LONG).show()
             return
         }
-        val isKorea = selectedId == R.id.koreaRadioButton //default value nya
-        val isJepang = selectedId == R.id.jepangRadioButton //default value nya
-        val isTaiwan = selectedId == R.id.taiwanRadioButton //default value nya
+//        val isKorea = selectedId == R.id.koreaRadioButton //default value nya
+//        val isJepang = selectedId == R.id.jepangRadioButton //default value nya
+//        val isTaiwan = selectedId == R.id.taiwanRadioButton //default value nya
 
     }
 
