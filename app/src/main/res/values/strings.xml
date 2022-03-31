@@ -6,6 +6,10 @@
     <string name="korea">Korea</string>
     <string name="jepang">Jepang</string>
     <string name="taiwan">Taiwan</string>
-    <string name="ok">OK</string>
+    <string name="cari">CARI</string>
     <string name="country_invalid">Pilih negara asal</string>
+    <string name="member_korea">Nayeon, Jeongyeon, Jihyo, Dahyun, Chaeyoung</string>
+    <string name="member_jepang">Momo, Sana, Mina</string>
+    <string name="member_taiwan">Tzuyu</string>
+
 </resources>

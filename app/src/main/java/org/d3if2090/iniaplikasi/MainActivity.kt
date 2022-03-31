@@ -31,11 +31,24 @@ class MainActivity : AppCompatActivity() {
             Toast.makeText(this, R.string.country_invalid, Toast.LENGTH_LONG).show()
             return
         }
-//        val isKorea = selectedId == R.id.koreaRadioButton //default value nya
+        val isKorea = selectedId == R.id.koreaRadioButton //default value nya
 //        val isJepang = selectedId == R.id.jepangRadioButton //default value nya
 //        val isTaiwan = selectedId == R.id.taiwanRadioButton //default value nya
+        val kategori = getKategori (isKorea)
 
+        binding.tvHasil.text = getString(kategori.toInt())
     }
+
+    private fun getKategori(isKorea: Boolean): String {
+        val stringRes = if (isKorea) {
+            R.string.member_korea
+        } else {
+            R.string.member_jepang
+        }
+        return  getString(stringRes)
+    }
+
+
 
     private fun getData(): List<Member> {
         return listOf(
